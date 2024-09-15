@@ -1,0 +1,184 @@
+body {
+    background-color: #2c2c2c;
+    width: 39em;
+    height: 115vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.content {
+    position: relative;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.75em;
+    top: 7em;
+    font-family: 'casc';
+    font-weight: 300;
+    color: #cfcfcf;
+}
+
+.paper {
+    top: 5.5em;
+    border: solid 2px #5c5c5c;
+    margin-left: -2em;
+    width: 8.27in;
+    height: 11.69in;
+    background-color: rgba(150,150,150,.1);
+}
+
+.resume {
+    text-indent: 0;
+    text-align: left;
+    font-family: 'Arial';
+    font-size: 14.67px;
+    line-height: 1.4em;
+    margin-left: calc(1em + 1in);
+    margin-right: calc(1em + 1in);
+}
+
+hr {
+    width: 101%;
+    transform: translateX(-4px);
+}
+
+.resH1 {
+    font-size: 32px;
+}
+
+.resH2 {
+    padding-top: 0.65em;
+    line-height: 1.3em;
+    font-size: 16px;
+    font-weight:lighter;
+    color: #b0b0b0;
+}
+
+.resH3 {
+    padding-top: 1.5em;
+    font-size: 21.3px;
+    line-height: 0.8em;
+}
+
+.resH4 {
+    font-weight: bold;
+}
+
+.resList {
+    margin: 0;
+    line-height: 1.5em;
+    padding-bottom: 0.75em;
+}
+
+.indexBar {
+    position: fixed;
+    width: 100%;
+    inset: 0 0 0 0;
+    height: 3em;
+    border: 0;
+    background-color: #2c2c2c;
+    border-bottom: 6px solid #3c3c3c;
+    z-index: 1000;
+}
+
+button {
+    position: relative;
+    transition: ease-out;
+    animation-name: buttonSlide;
+    animation-duration: 0.65s;
+    background-color: inherit;
+    color: white;
+    float: right;
+    width: 8em;
+    height: 100%;
+    border: 0;
+    border-left: #4f4f4f 2px solid;
+    letter-spacing: 2px;
+    font-family: 'casc';
+    font-weight: 200;
+    font-size: 0.9em;
+    right: 100%;
+    animation-fill-mode: forwards;
+}
+
+button:hover {
+    transition: 0.15s;
+    background-color: #272727;
+    box-shadow: inset 2px 1px 5px  rgb(0, 0, 0);
+    /* height: 105%; */
+    transform: translate(0px, 1px);
+}
+
+button:active {
+    transition: 0.1s;
+    background-color: #222222;
+    box-shadow: inset 3px 2px 10px  rgb(0, 0, 0);
+}
+
+.headerBlock {
+    position: relative;
+    top: 16em;
+    margin: 0;
+    color: white;
+}
+
+.headerImage {
+    left: 0;
+    top: 3em;
+    width: 100%;
+    margin: 0;
+    height: 25em;
+    border-top: 3px solid #5c5c5c;
+    border-bottom: 3px solid #5c5c5c;
+    overflow: hidden;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.nameHeader {
+    text-shadow: 3px 3px 5px #1f1f1f;
+    margin: inherit;
+    padding: 15px 0 15px 0;
+    font-family: 'casc';
+    font-weight: 300;
+    font-size: 5.5em;
+}
+
+.greetHeader {
+    text-shadow: 3px 3px 5px #1f1f1f;
+    color: #afafaf;
+    margin: inherit;
+    text-align: left;
+    font-family: 'casc';
+    font-weight: 300;
+    font-size: 2em;
+}
+
+h1 {
+    margin: 0;
+    text-indent: 0;
+    padding-bottom: 0.35em;
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+@font-face {
+    font-family: 'casc';
+    src: url('fonts/cascadiaExtraLight.ttf') format('truetype');
+    /* font-weight: 200; */
+}
+
+@keyframes buttonSlide {
+    from {right: 100vw}
+    to {right: 0;}
+}
+
+button:nth-child(4) {animation-delay: 0.3s;}
+button:nth-child(3) {animation-delay: 0.2s;}
+button:nth-child(2) {animation-delay: 0.1s;}
