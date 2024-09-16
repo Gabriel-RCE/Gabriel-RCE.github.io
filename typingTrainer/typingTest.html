@@ -1,0 +1,111 @@
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Speed Test</title>
+        <link href="starStyles.css" rel="stylesheet">
+        <script src="js/typingTest.js" type="module"></script>
+
+    </head>
+    
+    
+    <body id="bod">
+      <!-- Navbar -->
+      <nav>
+        <button style="width: 5.5vw; height: 1.8vw;" onclick="window.location.href='starHome.html'">Main Page</button>
+        <button style="width: 5.5vw; height: 1.8vw;" onclick="window.location.href='customWords.html'">Custom words</button>
+        <button style="width: 5.5vw; height: 1.8vw;" onclick="window.location.href='randomWords.html'">Random words</button>
+      </nav>
+      <p style="position: fixed; color: yellow; font-size: 1vw; left: 43vw; font-style: italic;">best played in 16:9 fullscreen</p>
+      <p style="padding-top: 2.5em; position: fixed; color: yellow; font-size: 0.75vw; left: 40vw; font-style: italic;">for whatever reason, this does not work on firefox browsers</p>
+
+      <!-- Header -->
+      <header id="header" style="top: 4vw">
+        <p>TyPiNg ExaminZTioN</p>
+        <p style="font-size: 1.2vw; margin-top: -6.5vw;">Try your speed with a test of endurance</p>
+      </header>
+
+      <!-- Main -->
+      <main>
+        <div id="curtain"></div>
+        <input id="userInput" type="password" class="inputBox" onblur="this.focus()" autofocus></input>
+        <input id="userInput" type="password" class="inputBox" onblur="this.focus()" autofocus></input>
+
+        <!-- Buttons for preferred WPM -->
+        
+        <div id="wpmButtons" style="margin-top: 12.5vw; text-align: center;"> <!-- TIME SHOULD BE LENGTHENED BY THREE TWENTIETHS -->
+          <button id="20" onclick="strt(483)" >20 wpm</button>
+          <button id="30" onclick="strt(322)" >30 wpm</button>
+          <button id="40" onclick="strt(241)" >40 wpm</button>
+          <button id="50" onclick="strt(193)" >50 wpm</button>
+          <button id="60" onclick="strt(161)" >60 wpm</button>
+          <button id="70" onclick="strt(138)" >70 wpm</button>
+          <button id="80" onclick="strt(120)" >80 wpm</button>
+          <button id="90" onclick="strt(107)" >90 wpm</button>
+          <button id="100" onclick="strt(96)">100 wpm</button>
+        </div>
+        
+  
+        <!-- Box with test score in it -->
+        <div id="testScore" class="container testScoreBox" style="position: relative; line-height: 4vw; top: 9vw;">
+          <div><span id="head" style="font-size: 3vw;"></span> <span id="filler1"></span> <span id="speed"></span> <span id="filler2"></span> <span id="mistypes"></span></div>
+          <button style="margin-top: 2vw;" onclick="location.reload()">Redo Test</button>
+
+          <!-- links to other pages -->
+          <button onclick="window.location.href='randomWords.html'">Random words</button>
+          <button onclick="window.location.href='customWords.html'">Custom words</button>
+          <button onclick="window.location.href='index.html'">Title Page</button>
+        </div>
+  
+        <!-- Test script and fading gradient -->
+        <div class="gradient" id="textFade">
+          <div class="testScriptBox" id="testScript">
+            <h2 style="color: #d6b007; text-align: center;">The Typing Test</h2>
+            <p id="textBox">In a world where technology has a strong grasp on humanity, maintaining and improving upon your typing speed is critical. Coming here each day to hone your skill can help you quickly see improvement. It's recommended that you practice typing for around 15 minutes every day. Do not be discouraged if you struggle to keep up, but rather take a break and come back after your fingers have rested. You may find that your little hand limbs are more effective afterwards. I'm running out of things to say to lengthen this test to make it a bit more challenging. According to Google, the words obstinance, assuming, and suburban are hard words to type. I hope you managed to make it this far because as this test draws to a close, it's possible that fatigue is starting to set in if you've chosen a high typing speed. </p>
+          </div>
+        </div>
+      </main>
+
+
+      <script>
+        const nav = document.querySelector('nav')
+        const header = document.getElementById('header')
+        const curtain = document.getElementById('curtain')
+        const textFade = document.getElementById('textFade')
+        const testScore = document.getElementById('testScore')
+        const testScript = document.getElementById('testScript')
+        const wpmButtons = document.getElementById('wpmButtons')
+
+
+        // Controls scrolling speed 
+        function strt(time)
+        {
+          textFade.style.display = 'flex'
+          const wait_time = (time * 965) // MAKES THE FADE TO BLACK SEAMLESS
+          time += 's'
+          testScript.style.animation = "scroll " + time + " linear forwards"
+
+          // Hides header and button
+          header.style.display = 'none'
+          wpmButtons.style.display = 'none'
+          
+          setTimeout(testEnd, wait_time);
+        }
+
+
+        // Fades to black, then displays scores
+        function testEnd()
+        {
+          curtain.classList.add('curtain')
+          nav.style.display = 'none'
+          
+          setTimeout(() =>
+          {
+            curtain.style.display = 'none'
+            testScript.style.display = 'none'
+            textFade.classList.remove('gradient')
+            testScore.style.display = 'block'
+          }, 5500);
+        }
+      </script>
+    </body>
+</html>

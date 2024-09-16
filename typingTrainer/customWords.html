@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+      <meta charset="UTF-8">
+      <title>Custom Words</title>
+      <link href="starStyles.css" rel="stylesheet">
+      <script src="js/customWords.js" type="module"></script>
+  </head>
+
+    
+    <body>
+      <!-- Navbar -->
+      <nav>
+          <button style="width: 5.5vw; height: 1.8vw;" onclick="window.location.href='starHome.html'">Main Page</button>
+          <button style="width: 5.5vw; height: 1.8vw;" onclick="window.location.href='typingTest.html'">Typing Test</button>
+          <button style="width: 5.5vw; height: 1.8vw;" onclick="window.location.href='randomWords.html'">Random words</button>
+      </nav>
+
+      <!-- Header -->
+      <header>
+        <p>cuStoM WordS</p>
+        <p style="font-size: 1.2vw; margin-top: -6.5vw;">Personalize your typing experience!</p>
+      </header>
+
+      <!-- Main -->
+      <main class="container"> <!-- Contains everything in a border -->
+              
+            <!-- Text related -->
+            <div> 
+              <div class="generatedTextBox" id="textBox"></div> <!-- Generated Text -->
+              <input class="inputBox" type="password" id="userInput" onblur="this.focus()" autofocus></input>
+            </div>
+            
+            <!-- Word count -->
+            <select id="wordAmount">
+              <option value="10">10 words</option>
+              <option value="20">20 words</option>
+              <option value="30">30 words</option>
+            </select>
+            
+            <!-- Keyboard Layout -->
+            <select id="keyboard">
+              <option value="QWERTY">QWERTY</option>
+              <option value="DVORAK">DVORAK</option>
+              <option value="COLEMAK">COLEMAK</option>
+            </select>
+    
+            <!-- Hand layout -->
+            <select id="hand">
+              <option value="both">Both hands</option>
+              <option value="left">Hand Solo (left)</option>
+              <option value="right">Hand Solo (right)</option>
+            </select>
+    
+            <!-- Row layout -->
+            <select id="row">
+              <option value="all">All rows</option>
+              <option value="middle">Middle row only</option>
+            </select>
+          </div>
+      </main>
+    </body>
+</html>

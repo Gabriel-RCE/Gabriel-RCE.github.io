@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+      <meta charset="UTF-8">
+      <link href="starStyles.css" rel="stylesheet">
+      <title>Type Trainer</title>
+  </head>
+
+
+  <body >
+    <!-- Header -->
+    <header>
+      <p>tYPE TXZinEV</p>
+    </header> 
+
+    <!-- Main -->
+    <main>
+      <!-- Contains the sabers -->
+      <div style="position: relative; left: 33%;"> 
+  
+        <!-- Saber 1 -->
+        <div onmouseover="extend(1)" onmouseout="retract(1)" style="width: 0">
+          <button id="1" class="saber" style="top: 2.85vw;" onclick="window.location.href='customWords.html'">Custom Words</button>
+          <img src="images/saber.png" class="hilt" style="margin-top: -7vw">
+        </div>
+  
+        <!-- Saber 2 -->
+        <div onmouseover="extend(2)" onmouseout="retract(2)" style="width: 0">
+          <button id="2" class="saber" style="top: 9.38vw;" onclick="window.location.href='randomWords.html'">Random Words</button>
+          <img src="images/saber.png" class="hilt">
+        </div>
+  
+        <!-- Saber 3 -->
+        <div onmouseover="extend(3)" onmouseout="retract(3)" style="width: 0;">
+          <button id="3" class="saber" style="top: 15.88vw;" onclick="window.location.href='typingTest.html'">Typing Test</button>
+          <img src="images/saber.png" class="hilt">
+        </div>
+      </div>
+    </main>
+
+
+    <script>
+      function extend(id) // Extends saber when cursor is hovered
+      {
+        document.getElementById(id).style.animation = "extend 0.35s linear forwards"
+      }  
+      function retract(id) // Retracts saber when cursor is removed
+      {
+        document.getElementById(id).style.animation = "retract 0.15s linear forwards"
+      }
+    </script>
+  </body>
+</html>

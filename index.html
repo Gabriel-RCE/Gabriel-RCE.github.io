@@ -4,12 +4,13 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <title>Homepage</title>
+        <title>It's Gabe!</title>
         <div class="indexBar">
             <button onclick="document.getElementById('contactMe').scrollIntoView()">CONTACT ME</button>
             <button onclick="document.getElementById('resume').scrollIntoView()">RESUME</button>
             <button onclick="document.getElementById('projects').scrollIntoView()">PROJECTS</button>
             <button onclick="document.getElementById('aboutMe').scrollIntoView()">ABOUT ME</button>
+            <button onclick="location.href='typingTrainer/starHome.html'">Typing</button>
         </div>
         <img class="headerImage" src="photos/roboBackground2.png" alt="blur" style="filter: blur(3px) brightness(0.7);">
         <div class="headerBlock">
@@ -33,31 +34,38 @@
             <p>I joined the Lipscomb Robotics team at the start of my freshman year. During that year, I learned not only to collaborate with teammates, but also to be reliable when it comes to completing solo tasks.</p>
             <p>As a part of the mechanical design team, my main task was to design a component to pick up small blocks and carry them across the play field. Despite seeming like a simple task, creating a functioning clamp taught me to be conscious of my time management.</p>
             <div class="imgScroll">
-                <img src="photos/grippersCropped.png" width="275" height="235">
-                <img src="photos/robot1Cropped.png" width="275" height="235">
-                <img src="photos/robot2Cropped.png" width="275" height="235">
-                <img src="photos/teamCropped.png" style="padding-right: 1em;" width="275" height="235">
+                <img src="photos/grippersCropped.png" width="325" height="275">
+                <img src="photos/robot1Cropped.png" width="325" height="275">
+                <img src="photos/robot2Cropped.png" width="325" height="275">
+                <img src="photos/teamCropped.png" width="325" height="275" style="padding-right: 1em;">
             </div>
         <!-- Robocup -->
             <li class="projList">Robocup ARM Challenge <span style="font-size: 0.75em; color: #7c7c7c;">[Summer 2024]</span></li>
             <p>Competing in the Autonomous Robot Manipulation (ARM) Challenge was a drastic change from SoutheastCon. My role switched from part design to programming and running simulations of a robotic arm using MATLAB and Gazebo.</p>
             <p>Having only finished freshman year, the learning curve was steep for me. I spent a lot of time studying the basics of robot kinematics and how to navigate a linux system. My task on this team was working on the obstacle avoidance system for the robotic arm to allow it to navigate the environment safely.</p>
             <div class="imgScroll">
-                <img src="photos/robocup1Cropped.png" width="550" height="235">
-                <img src="photos/robocup2Cropped.png" style="padding-right: 1em;" width="275" height="235">
+                <img src="photos/robocup1Cropped.png" width="550" height="275">
+                <img src="photos/robocup2Cropped.png" width="325" height="275" style="padding-right: 1em;">
+            </div>
+        <!-- Starwars Typing Trainer -->
+            <li class="projList">Starwars Type Trainer <span style="font-size: 0.75em; color: #7c7c7c;">[2023]</span></li>
+            <p>Not being a fan of downtime, I took the online Harvard CS50 course between graduating highschool and going to college to stay productive. At the end of the course, we were to make a website for a Final Project — I made a typing trainer.</p>
+            <p>The capstone project was more than just a test of programming knowledge. It tested my ability to finish a large project by breaking it into easy-to-manage chunks.</p>
+            <p style="text-indent: 0;">You can try it yourself <a href="typingTrainer/starHome.html">HERE</a></p>
+            <div class="imgScroll">
+                <img src="photos/typeTrainer1.png" width="400" height="275">
+                <img src="photos/typeTrainer2.png" width="400" height="275">
+                <img src="photos/typeTrainer3.png" width="400" height="275" style="padding-right: 1em;">
             </div>
 
 <!-- RESUME -->
-            <h1  id="resume" style="padding-bottom: 1em;">Resume</h1>
+            <h1 id="resume" style="padding-bottom: 1em;">Resume <a href="typingTrainer/starHome.html" style="font-size: 0.4em;">[.pdf download]</a></h1>
             <div class="paper" style="padding-top: 5em;">
                 <div class="resume">
                     <div class="resH1"> Gabriel Everett</div>
-                    <div class="resH2">Electrical Engineering Student<br> (425) 295-1837 &nbsp | &nbsp gabe.everett@icloud.com</div>
+                    <div class="resH2">Electrical Engineering Student<br>gabe-everett.com &nbsp | &nbsp (425) 295-1837 &nbsp | &nbsp gabe.everett@icloud.com</div>
                     <div class="resH3" style="padding-top: 1.7em;">Objective</div><hr>
-                    <div> Sophomore engineering student looking for all opportunities
-                          to fill a desire to learn and develop real-world applications
-                          of engineering outside of the classroom. Wholly committed to
-                          bringing forth success to any project or task by applying myself.
+                    <div> Sophomore engineering student looking for all opportunities to fill a desire to learn and develop real-world applications of engineering outside of the classroom. Wholly committed to bringing forth success to any project or task by applying myself.
                     </div>
             <!-- Education -->
                     <div class="resH3">Education</div><hr>
@@ -78,6 +86,7 @@
                     <ul class="resList" style="padding-bottom: 0;">
                         <li>Bachelor of Science — Electrical Engineering</li>
                     </ul>
+
             <!-- Engineering Experience -->
                     <div class="resH3">Engineering Experience</div><hr>
                 <!-- Robocup -->
@@ -86,7 +95,7 @@
                         <div class="resDates">(Summer 2024)</div>
                     </div>
                     <ul class="resList">
-                        <li>Worked on obstacle avoidance navigation system with a small team using Matlab.</li>
+                        <li>Worked on obstacle avoidance navigation system with a small team using MATLAB.</li>
                         <li>Learned to collaborate in a team by employing good communication.</li>
                         <li>Maintained a learning mindset to find the most efficient method to avoid robot arm collisions.</li>
                     </ul>
@@ -102,18 +111,18 @@
                 <!-- Robotic Arm Research -->
                     <div class="resSameLine">
                         <div class="resH4">Robotic Arm Research (Early Stages)</div>
-                        <div class="resDates">(2024 Fall — present)</div>
+                        <div class="resDates">(2024 Fall — Present)</div>
                     </div>
                     <ul class="resList" style="padding-bottom: 0;">
                         <li>Learning to work with Robot Operating System (ROS) using Linux.</li>
                         <li>Forming strong time management skills by coordinating between research and school</li>
                     </ul>
-                <!-- Personal Hobbies -->
+            <!-- Personal Hobbies -->
                     <div class="resH3">Personal Projects/Hobbies</div><hr>
                     <ul class="resList">
                         <li>Learning fundamentals of Linux</li>
                         <li>Interfacing with Arduino circuits</li>
-                        <li>Harvard CS50 course (introduction to computer science)</li>
+                        <li>Harvard CS50 course</li>
                     </ul>
                 </div>
             </div>

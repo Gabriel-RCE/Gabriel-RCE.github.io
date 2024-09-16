@@ -213,6 +213,13 @@ p {
     border: solid 2px #5c5c5c;
     text-indent: 0;
     border-radius: 15px;
+    pointer-events: none;
+    user-select: none;
+}
+
+a {
+    color: #f5e12c;
+    font-size: 20px;
 }
 
 @font-face {

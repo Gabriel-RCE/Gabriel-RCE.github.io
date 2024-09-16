@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Words</title>
+    <link href="starStyles.css" rel="stylesheet">
+    <script src="js/randomWords.js" type="module"></script>
+  </head>
+
+
+  <body style="overflow: visible;">
+    <!-- Navbar -->
+    <nav>
+      <button style="width: 5.5vw; height: 1.8vw;" onclick="window.location.href='starHome.html'">Main Page</button>
+      <button style="width: 5.5vw; height: 1.8vw;" onclick="window.location.href='typingTest.html'">Typing Test</button>
+      <button style="width: 5.5vw; height: 1.8vw;" onclick="window.location.href='customWords.html'">Custom words</button>
+    </nav> 
+    
+    <!-- Header -->
+    <header>
+      <p>RanDom wordS</p>
+      <p style="font-size: 1.2vw; margin-top: -6.5vw;">Practice against randomly selected words from the starwars script!</p>
+    </header>
+    
+    <!-- Main -->
+    <main>
+      <div class="container"> <!-- Contains everything within border -->
+  
+          <!-- Clocks -->
+        <div style="font-size: 1vw; font-family: Star Jedi; letter-spacing: 0.3vw; margin-top: -1vw;">
+          <h1 id="startingTimer">--Press Start--</h1>
+          <h1 id="timeTaken" style="margin-top: -1vw;">timer</h1>
+        </div>
+  
+        <!-- Text related -->
+        <div>
+          <div class="generatedTextBox" id="textBox">(text will appear here)</div> <!-- Generated Text -->
+          <input class="inputBox" type="password" id="userInput" onblur="this.focus()" autofocus></input>
+        </div>
+      
+        <!-- Word count -->
+        <select id="wordAmount">
+          <option value="10">10 words</option>
+          <option value="20">20 words</option>
+          <option value="30">30 words</option>
+        </select>
+        <button id="startButton" style="font-size: 0.8vw; height: 1.5vw;">Start</button>
+      </div> 
+  
+      <!-- Table with previous scores -->
+      <table id="scoreTable">
+        <tr>
+          <th>Word Count</th>
+          <th>Character Count</th>
+          <th>Accuracy</th>
+          <th>Speed</th>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>
