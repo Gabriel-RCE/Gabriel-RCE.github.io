@@ -73,6 +73,18 @@ hr {
     padding-bottom: 0.75em;
 }
 
+.resSameLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resDates {
+    font-size: 13.33px;
+    color: #6f6f6f;
+    font-weight: 200;
+    text-align: right;
+}
+
 .projList {
     padding-top: 1.5em;
     margin-left: 1em;
@@ -87,7 +99,7 @@ hr {
     position: fixed;
     width: 100%;
     inset: 0 0 0 0;
-    height: 3em;
+    height: 4em;
     border: 0;
     background-color: #2c2c2c;
     border-bottom: 6px solid #3c3c3c;
@@ -129,7 +141,7 @@ button:active {
 
 .headerBlock {
     position: relative;
-    top: 16em;
+    top: 19em;
     margin: 0;
     color: white;
 }
@@ -139,7 +151,7 @@ button:active {
     top: 3em;
     width: 100%;
     margin: 0;
-    height: 25em;
+    height: 30em;
     border-top: 3px solid #5c5c5c;
     border-bottom: 6px solid #5c5c5c;
     overflow: hidden;
@@ -159,9 +171,8 @@ button:active {
 }
 
 .greetHeader {
-    text-shadow: 3px 3px 5px #1f1f1f;
-    color: #afafaf;
-    margin: inherit;
+    text-shadow: 3px 3px 3px #1f1f1f;
+    color: #bfbfbf;
     text-align: left;
     font-family: 'casc';
     font-weight: 300;
