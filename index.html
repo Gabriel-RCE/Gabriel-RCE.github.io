@@ -6,28 +6,54 @@
     <body>
         <title>Homepage</title>
         <div class="indexBar">
-            <button onclick="location.href='contact.html'">CONTACT</button>
+            <!-- <button onclick="location.href='contact.html'">CONTACT</button>
             <button onclick="location.href='resume.html'">RESUME</button>
             <button onclick="location.href='projects.html'">PROJECTS</button>
-            <button onclick="location.href='index.html'">ABOUT ME</button>
+            <button onclick="location.href='index.html'">ABOUT ME</button> -->
+            <button onclick="document.getElementById('contactMe').scrollIntoView()">CONTACT ME</button>
+            <button onclick="document.getElementById('resume').scrollIntoView()">RESUME</button>
+            <button onclick="document.getElementById('projects').scrollIntoView()">PROJECTS</button>
+            <button onclick="document.getElementById('aboutMe').scrollIntoView()">ABOUT ME</button>
         </div>
-        <img class="headerImage" src="image.png" alt="blur" style="filter: brightness(0.7);">
+        <img class="headerImage" src="photos/roboBackground2.png" alt="blur" style="filter: blur(3px) brightness(0.7);">
         <div class="headerBlock">
             <div class="greetHeader">Hello! I am</div>
             <div class="nameHeader">Gabe</div>
         </div>
+
 <!-- ABOUT ME -->
         <div class="content" style="top: 20em;">
-            <h1>About Me</h1>
-            <p> &emsp; My name is Gabe Everett, and I am a sophomore Electrical Engineering
-                Student at Lipscomb University. While only having a little over a
+            <h1 id="aboutMe">About Me</h1>
+            <p>My name is Gabe Everett, and I am a sophomore Electrical Engineering
+                Student at Lipscomb University. Driving me is a desire to best use the gifts God has given me in hopes of inspiring the world to do the same.</p>
+            <p>I plan on working in the biomedical engineering industry — more specifically prosthetics. While only having a little over a
                 year in formal education, I do my best to spend free time learning
-                new things and participating in various engineering projects.
-            </p>
+                new things and participating in various engineering projects.</p>
+
+<!-- Projects -->
+            <h1 id="projects">Projects</h1>
+        <!-- SoutheastCon -->
+            <li class="projList">SoutheastCon Hardware Competition <span style="font-size: 0.75em; color: #7c7c7c;">[2023 - 2024]</span></li>
+            <p>I joined the Lipscomb Robotics team at the start of my freshman year. During that year, I learned not only to collaborate with teammates, but also to be reliable when it comes to completing solo tasks.</p>
+            <p>As a part of the mechanical design team, my main task was to design a component to pick up small blocks and carry them across the play field. Despite seeming like a simple task, creating a functioning clamp taught me to be conscious of my time management.</p>
+            <div class="imgScroll">
+                <img src="photos/grippersCropped.png" width="275" height="235">
+                <img src="photos/robot1Cropped.png" width="275" height="235">
+                <img src="photos/robot2Cropped.png" width="275" height="235">
+                <img src="photos/teamCropped.png" style="padding-right: 1em;" width="275" height="235">
+            </div>
+        <!-- Robocup -->
+            <li class="projList">Robocup ARM Challenge <span style="font-size: 0.75em; color: #7c7c7c;">[Summer 2024]</span></li>
+            <p>Competing in the Autonomous Robot Manipulation (ARM) Challenge was a drastic change from SoutheastCon. My role switched from part design to programming and running simulations of a robotic arm using MATLAB and Gazebo.</p>
+            <p>Having only finished freshman year, the learning curve was steep for me. I spent a lot of time studying the basics of robot kinematics and how to navigate a linux system. My task on this team was working on the obstacle avoidance system for the robotic arm to allow it to navigate the environment safely.</p>
+            <div class="imgScroll">
+                <img src="photos/robocup1Cropped.png" width="550" height="235">
+                <img src="photos/robocup2Cropped.png" style="padding-right: 1em;" width="275" height="235">
+            </div>
 
 <!-- RESUME -->
-            <h1 style="padding-bottom: 2em;">Resume</h1>
-            <div class="paper" style="padding: 0em;">
+            <h1  id="resume" style="padding-bottom: 1em;">Resume</h1>
+            <div class="paper" style="padding-top: 5em;">
                 <div class="resume">
                     <div class="resH1"> Gabriel Everett</div>
                     <div class="resH2">Electrical Engineering Student<br> (425) 295-1837 &nbsp | &nbsp gabe.everett@icloud.com</div>
@@ -73,6 +99,12 @@
                         <li>Harvard CS50 course (introduction to computer science)</li>
                     </ul>
                 </div>
+            </div>
+<!-- Contact Me -->
+            <h1 id="contactMe" style="margin-top: 0.75em; padding-bottom: 1.25em;">Contact Me</h1>
+            <div class="contactBox">
+                <p>Email: gabe.everett@icloud.com</p>
+                <p>Phone: 425.295.1837</p>
             </div>
         </div>
     </body>
