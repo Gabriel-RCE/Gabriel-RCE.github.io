@@ -212,6 +212,18 @@ header
     animation: burst 6s forwards;
 }
 
+.return {
+    border-radius: 5px;
+    width: 12em;
+    position: absolute;
+    top: -8em;
+    background-color: #2c2c2c;
+    border: 2px solid #5c5c5c;
+    color: white;
+    margin-left: 91%;
+    box-shadow: none;
+    
+}
 
 
 @keyframes retract
